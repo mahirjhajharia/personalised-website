@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>ASSIGNMENT QUESTION </title>
+ </head>
+ <div style="text-align:center"><b><u><i>CHANDIGARH UNIVERSITY</b></u></i>
+ <p><b>Mahir jhajharia</b></p>
+ <p><b>20BCS1949</b></p></div>
+</head>
+<center>
+<style>
+ body {font-family: sans-serif;color:#333;}
+ #para1 {
+ background-color: #52A9FF;
+ font-size: 30px;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ border-radius: 25px;
+ border: solid;
+ width: 595px;
+ text-align: center;
+ }
+ .container{
+ border: 2px solid black;
+ background-color: #52FFD5;
+ height: 300px;
+ width: 600px;
+ text-align: center;
+ }
+ .button {
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ font-weight: bold;
+ background-color: #lavender;
+ padding: 6px;
+ border: none;
+ cursor: pointer;
+ font-size: 13px;
+ border-radius: 4px;
+ border: solid;
+ }
+ .button:hover {
+ color: rgb(92, 66, 1);
+ background-color: #gold;
+ border: 2px solid rgb(218, 15, 15);
+ }
+</style>
+<body>
+ <div class="container">
+ <p id="para1">Choose a number of your wish.</p>
+
+ <p><strong><u> NOTE: </u></strong></p>
+ <p style="wordspacing: 60px;"><strong><u>Input_Type</u> <u>Output</u></strong></p>
+ <p style="word-spacing: 60px;">Right_Answer: "Good_Work"</p>
+ <p style="word-spacing: 60px;">Wrong_Answer: "Not_Matched".</p>
+<button class="button" onclick="guess()">Click Me!</button>
+</div>
+</center>
+<script>
+ function guess(){
+ var num = parseInt(Math.random() * 10 + 1);
+ var userGuess = prompt("input a guess number between 1 to 10");
+ if(isNaN(userGuess)) {
+ alert("Please, write a number");
+ } else {
+ if(num == userGuess){
+ alert("Wow you guessed it :D");
+ } else {
+ alert("Not matched. Number was " + num);
+ }
+ }
+}
+</script>
+</body>
+</html>
